@@ -16,11 +16,11 @@ export default function Home() {
     return (
         <section className='w-full h-screen relative overflow-hidden flex items-center justify-center' onMouseMove={parallax}>
             {logos.map(ele => <div key={ele.logo} className='w-screen h-screen absolute top-0 left-0' style={{ translate: `${ele.xAxis}px ${ele.yAxis}px` }} >
-                <img src={`./public/icons/${ele.logo}.svg`} alt={ele.logo} style={{ width: '50px', translate: `${ele.xAxisPermenent}vw ${ele.yAxisPermenent}vh`, opacity: '.5' }} />
+                <img src={`icons/${ele.logo}.svg`} alt={ele.logo} style={{ width: '50px', translate: `${ele.xAxisPermenent}vw ${ele.yAxisPermenent}vh`, opacity: '.5' }} />
             </div>)}
 
             {/* <img src="./public/icons/logo.svg" alt="logo" className='absolute w-[400px]' /> */}
-            <img src="./icons/logo.svg" alt="logo" className='absolute w-[400px]' />
+            <img src="icons/logo.svg" alt="logo" className='absolute w-[400px]' />
 
             {/* <ul className='flex items-center justify-center gap-7 flex-col absolute top-0 right-0 h-full p-5'>
                 {socialMediaIcons.map(ele => (<li key={ele.name} className='hover:bg-secondary rounded-full cursor-pointer p-0 hover:p-3 ease-in-out duration-300' title={ele.name} >
