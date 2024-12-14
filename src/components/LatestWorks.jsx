@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../api'
+import { projects, publicUrl } from '../api'
 
 export default function LatestWorks() {
     return (
@@ -14,10 +14,10 @@ export default function LatestWorks() {
                     <a href={ele.link} target='_blank' className='w-full flex items-center justify-center relative group  hover:scale-105 ease-in-out duration-100'>
                         <div className={`flex gap-3 p-2 rounded cursor-pointer absolute top-2 group-hover:-top-14 ease-in-out duration-100`} style={{ backgroundColor: ele.hexColor }}>
                             <h3>{ele.name}</h3>
-                            <img src="./public/icons/external-link.svg" alt="external-link" className='w-[20px]' />
+                            <img src={`${publicUrl}/icons/external-link.svg`} alt="external-link" className='w-[20px]' />
                             <span className={`w-4 h-4 absolute top-8 left-1/2 -translate-x-1/2 rotate-45`} style={{ backgroundColor: ele.hexColor }}></span>
                         </div>
-                        <img src={`./public/images/${ele.id}.png`} alt={ele.id} className='w-[400px] cursor-pointer relative' />
+                        <img src={`${publicUrl}/images/${ele.id}.png`} alt={ele.id} className='w-[400px] cursor-pointer relative' />
                     </a>
                     <div className='w-full flex justify-center flex-col gap-5'>
                         <h1 className={`text-3xl font-semibold`} style={{ color: ele.hexColor }}>{ele.name}</h1>

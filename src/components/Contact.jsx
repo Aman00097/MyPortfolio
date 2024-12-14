@@ -1,4 +1,5 @@
 import React from 'react'
+import { publicUrl } from '../api'
 
 export default function Contact() {
     return (
@@ -8,7 +9,7 @@ export default function Contact() {
             </div>
             <div className='flex items-center gap-24 px-20 py-10'>
                 <div className='w-full border-4 rounded-xl border-primary p-10'>
-                    <img src="./public/icons/contact.svg" alt="connect-img" />
+                    <img src={`${publicUrl}/icons/contact.svg`} alt="connect-img" />
                 </div>
                 <form name="contact" method="POST" data-netlify="true" className="w-full space-y-8" autoComplete='off' >
                     <div>

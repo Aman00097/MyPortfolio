@@ -1,3 +1,5 @@
+export const publicUrl='https://aman00097.github.io/MyPortfolio'
+
 export const programmingLanguageLogos = [
     {
         logo: 'html',
