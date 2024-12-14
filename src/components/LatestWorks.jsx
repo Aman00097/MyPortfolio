@@ -17,7 +17,7 @@ export default function LatestWorks() {
                             <img src={`${publicUrl}/icons/external-link.svg`} alt="external-link" className='w-[20px]' />
                             <span className={`w-4 h-4 absolute top-8 left-1/2 -translate-x-1/2 rotate-45`} style={{ backgroundColor: ele.hexColor }}></span>
                         </div>
-                        <img src={`${publicUrl}/images/${ele.id}.png`} alt={ele.id} className='w-[400px] cursor-pointer relative' />
+                        <img src={`${publicUrl}/images/${ele.id}.png`} alt={ele.id} className='w-[400px] cursor-pointer relative' style={{filter: `drop-shadow(0 0 30px ${ele.hexColor})`}}/>
                     </a>
                     <div className='w-full flex justify-center flex-col gap-5'>
                         <h1 className={`text-3xl font-semibold`} style={{ color: ele.hexColor }}>{ele.name}</h1>
